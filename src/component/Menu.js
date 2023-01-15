@@ -34,7 +34,7 @@ const ButtonSendBlock = styled.button`
   cursor: pointer;
 
   /* при наведенні на блок 
-    він стає прозорим на 30% (1 - 0.7)
+    він стає прозорим на 50% (1 - 0.7)
    */
   &:hover {
     opacity: 0.5;
