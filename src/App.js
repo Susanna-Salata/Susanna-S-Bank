@@ -1,4 +1,4 @@
-// ІМПОРТУЄМО БІБЛІОТЕКИ
+// ІМПОРТУЄМО БІБЛІОТЕКИ БЕЗ ЯКИХ НЕ МОЖЕМО ПИСАТИ КОД
 import React from "react";
 
 // ІМПОРТУЄМО ПОТРІБНІ КОМПОНЕНТИ
@@ -17,7 +17,7 @@ const GET_MONEY = 100;
 export default function App() {
   // ФУНКЦІОНАЛ БАЛАНСУ ========================
 
-  // Актуальне значення балансу
+  // Ось тут тримаємо актуальне значення балансу
 
   const [balance, setBalance] = React.useState(START_BALANCE);
 
@@ -43,7 +43,7 @@ export default function App() {
   // ВЕРСТКА ІНТЕРФЕЙСУ ==========================================
 
   // ця функція відкриває вікно в браузері з текстом
-  const HelloWorld = () => alert("Hello world!");
+  const byeMoney = () => setBalance(balance - GET_MONEY);
 
   return (
     <Page>
@@ -52,7 +52,7 @@ export default function App() {
           в нас визивається функція HelloWorld
       */}
 
-      <Header name="Susanna'S BANK" onClick={HelloWorld} />
+      <Header name="Susanna'S BANK" onClick={byeMoney} />
 
       {/* Компонент баланса в який передається
           Актуальне значення балансу  */}
@@ -68,9 +68,9 @@ export default function App() {
             img: "/icon/get.svg"
           },
           {
-            name: "Поповнити баланс",
-            onClick: getMoney,
-            img: "/icon/get.svg"
+            name: "Зняти гроші",
+            onClick: byeMoney,
+            img: "/icon/payment.svg"
           }
         ]}
       />

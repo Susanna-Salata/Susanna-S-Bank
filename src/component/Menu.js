@@ -22,7 +22,7 @@ export default function Menu({ config }) {
 
 const ButtonSendBlock = styled.button`
   /* відступи між картинкою та текстом кнопках */
-  gap: 12px;
+  gap: 20px;
 
   /* додаємо можливість робити 
   плавну анімацію на 0.7 секунд */
@@ -37,7 +37,7 @@ const ButtonSendBlock = styled.button`
     він стає прозорим на 30% (1 - 0.7)
    */
   &:hover {
-    opacity: 0.7;
+    opacity: 0.5;
   }
 
   /* === */
@@ -58,16 +58,16 @@ const MenuBlock = styled.div`
 
 const ButtonSendIcon = styled.div`
   /* висота кнопки  */
-  height: 70px;
+  height: 100px;
 
   /* ширина кнопки */
-  width: 70px;
+  width: 100px;
 
   /* фон кнопки */
   background: #000000;
 
   /* закруглення країв кнопки */
-  border-radius: 35px;
+  border-radius: 50px;
 
   /* ==== */
   display: flex;
@@ -77,16 +77,16 @@ const ButtonSendIcon = styled.div`
 
 const ButtonSendText = styled.div`
   /* жирність тексту (400, 500, 600, 700) */
-  font-weight: 400;
+  font-weight: 600;
 
   /* розмір тексту */
-  font-size: 17px;
+  font-size: 20px;
 
   /* колір тексту */
   color: #ffffff;
 
   /* висота рядка тексту */
-  line-height: 22px;
+  line-height: 32px;
 
   /* ==== */
 
